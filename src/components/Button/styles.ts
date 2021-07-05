@@ -12,5 +12,5 @@ export const Container = styled(RectButton)`
 
 export const TextButton = styled.Text`
   font-size: ${RFValue(16)}px;
-  font-family: ${({ theme }) => theme.fonts.medium};
+  font-family: ${({ theme }) => theme.fonts.bold};
 `;
