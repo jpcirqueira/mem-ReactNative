@@ -1,0 +1,12 @@
+{
+  "name": "mem-ReactNative",
+  "displayName": "mem-ReactNative",
+  "expo": {
+    "name": "mem-ReactNative",
+    "slug": "mem-ReactNative",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
