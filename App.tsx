@@ -9,8 +9,8 @@ import {
   Roboto_700Bold
 } from '@expo-google-fonts/roboto';
 import theme from './src/global/theme';
-import Register
- from './src/pages/Register';
+import HomePage
+ from './src/pages/HomePage';
  
 export default function App() {
   const [ fontsLoaded ] = useFonts({
@@ -24,7 +24,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar barStyle="light-content" />
-      <Register />
+      <HomePage />
     </ThemeProvider>
 
   );

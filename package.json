@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@expo-google-fonts/roboto": "^0.2.0",
+    "@types/react-native-snap-carousel": "^3.8.3",
     "expo": "~41.0.1",
     "expo-app-loading": "^1.1.2",
     "expo-font": "~9.1.0",
@@ -21,8 +22,10 @@
     "react-native-reanimated": "~2.1.0",
     "react-native-responsive-fontsize": "^0.5.0",
     "react-native-screens": "~3.0.0",
+    "react-native-snap-carousel": "^3.9.1",
     "react-native-unimodules": "~0.13.3",
     "react-native-web": "~0.13.12",
+    "resize-observer-polyfill": "^1.5.1",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
