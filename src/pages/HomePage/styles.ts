@@ -17,6 +17,7 @@ export const CarouselContainer = styled.View`
 export const HeaderText = styled.Text`
   color: ${({ theme }) => theme.colors.text};
   font-size: ${RFValue(20)}px;
+  padding: 10px;
 `;
 
 export const ContentText = styled.Text`
@@ -28,5 +29,4 @@ export const Content = styled.View`
   justify-content: space-between;
   align-items: center;
   padding: 70px 20px;
-  /* margin-top: ${RFPercentage(30)}px; */
 `;

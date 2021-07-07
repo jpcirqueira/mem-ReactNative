@@ -13,7 +13,7 @@ import Button from '../../components/Button';
 function HomePage() {
   return (
     <Container>
-      <HeaderText>Bem vindo,João</HeaderText>
+      <HeaderText>Bem vindo, João</HeaderText>
       <Content>
         <CarouselContainer>
           <Carousel />
