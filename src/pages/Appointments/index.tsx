@@ -5,7 +5,16 @@ import Button from '../../components/Button';
 import CalendarComponent from '../../components/CalendarComponent';
 import InputButton from '../../components/InputButton';
 import { Furnitures } from '../../utils/Furnitures';
-import { Container, Title, HourContainer, SubTitle, ButtonContainer} from './styles';
+import { 
+  Container,
+  Title,
+  HourContainer,
+  SubTitle,
+  ButtonContainer,
+  Header,
+  Icon,
+  TitleHeader,
+} from './styles';
 
 function Appointments() {
 
@@ -16,6 +25,10 @@ function Appointments() {
 
   return (
     <Container>
+      <Header>
+        <Icon  name='arrow-left'/>
+        <TitleHeader>Agendamento</TitleHeader>
+      </Header>
       <Title>Escolha a data</Title>
       <CalendarComponent markedDate={markedDate}  handleSelectDate={handleSelectDate}/>
       <Title>Escolha o horário</Title>
