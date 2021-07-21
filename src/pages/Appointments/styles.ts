@@ -26,10 +26,6 @@ export const SubTitle = styled.Text`
   font-family: ${({ theme }) => theme.fonts.regular};
 `;
 
-export const FurnitureContainer = styled.View`
-  width: 60%;
-`;
-
 export const ButtonContainer = styled.View`
   margin: 20px 0;
   width: 100%;

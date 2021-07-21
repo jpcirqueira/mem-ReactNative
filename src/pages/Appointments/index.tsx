@@ -4,38 +4,12 @@ import Button from '../../components/Button';
 
 import CalendarComponent from '../../components/CalendarComponent';
 import InputButton from '../../components/InputButton';
-import { Container, Title, HourContainer, SubTitle, FurnitureContainer, ButtonContainer} from './styles';
+import { Furnitures } from '../../utils/Furnitures';
+import { Container, Title, HourContainer, SubTitle, ButtonContainer} from './styles';
 
 function Appointments() {
-  const Furnitures = [
-    {
-      key:1,
-      name: 'Cozinha'
-    },
-    {
-      key:2,
-      name: 'Guarda Roupa'
-    },
-    {
-      key:3,
-      name: 'Banheiro'
-    },
-    {
-      key:4,
-      name: 'Escritorio'
-    },
-    {
-      key:5,
-      name: 'Closet'
-    },
-    {
-      key:6,
-      name: 'Outros'
-    }
-  ]
 
-  const [markedDate, setMarkedDate] = useState('')
-  const teste = 2;
+  const [markedDate, setMarkedDate] = useState('');
   function handleSelectDate(date: string){
     setMarkedDate(date)
   }
@@ -74,7 +48,7 @@ function Appointments() {
         renderItem={({ item })=> (
           <InputButton title={item.name}/>
         )}
-        numColumns={teste}
+        numColumns={2}
       />
       <ButtonContainer>
         <Button text="Agendar" onPress={() =>{}}/>
