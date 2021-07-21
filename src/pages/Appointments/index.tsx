@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { FlatList } from 'react-native-gesture-handler';
+import Button from '../../components/Button';
 
 import CalendarComponent from '../../components/CalendarComponent';
 import InputButton from '../../components/InputButton';
-import { Container, Title, HourContainer, SubTitle, FurnitureContainer} from './styles';
+import { Container, Title, HourContainer, SubTitle, FurnitureContainer, ButtonContainer} from './styles';
 
 function Appointments() {
   const Furnitures = [
@@ -66,15 +67,18 @@ function Appointments() {
         <InputButton title="17:00"/>
       </HourContainer>
       <Title>Escolha o tipo do movel</Title>
-        <FlatList
-          data={Furnitures}
-          keyExtractor={(item) => item.name}
-          style={{ flex: 1, width: '70%'}}
-          renderItem={({ item })=> (
-            <InputButton title={item.name}/>
-          )}
-          numColumns={teste}
-        />
+      <FlatList
+        data={Furnitures}
+        keyExtractor={(item) => item.name}
+        style={{ flex: 1, width: '70%'}}
+        renderItem={({ item })=> (
+          <InputButton title={item.name}/>
+        )}
+        numColumns={teste}
+      />
+      <ButtonContainer>
+        <Button text="Agendar" onPress={() =>{}}/>
+      </ButtonContainer>
     </Container>
   );
 };
