@@ -1,12 +1,40 @@
 import React, { useState } from 'react';
+import { FlatList } from 'react-native-gesture-handler';
 
 import CalendarComponent from '../../components/CalendarComponent';
 import InputButton from '../../components/InputButton';
 import { Container, Title, HourContainer, SubTitle, FurnitureContainer} from './styles';
 
 function Appointments() {
-  const [markedDate, setMarkedDate] = useState('')
+  const Furnitures = [
+    {
+      key:1,
+      name: 'Cozinha'
+    },
+    {
+      key:2,
+      name: 'Guarda Roupa'
+    },
+    {
+      key:3,
+      name: 'Banheiro'
+    },
+    {
+      key:4,
+      name: 'Escritorio'
+    },
+    {
+      key:5,
+      name: 'Closet'
+    },
+    {
+      key:6,
+      name: 'Outros'
+    }
+  ]
 
+  const [markedDate, setMarkedDate] = useState('')
+  const teste = 2;
   function handleSelectDate(date: string){
     setMarkedDate(date)
   }
@@ -38,12 +66,15 @@ function Appointments() {
         <InputButton title="17:00"/>
       </HourContainer>
       <Title>Escolha o tipo do movel</Title>
-      <FurnitureContainer>
-        <InputButton title="Cozinha"/>
-        <InputButton title="Guarda Roupa"/>
-        <InputButton title="Banheiro"/>
-        <InputButton title="Escritorio"/>
-      </FurnitureContainer>
+        <FlatList
+          data={Furnitures}
+          keyExtractor={(item) => item.name}
+          style={{ flex: 1, width: '70%'}}
+          renderItem={({ item })=> (
+            <InputButton title={item.name}/>
+          )}
+          numColumns={teste}
+        />
     </Container>
   );
 };

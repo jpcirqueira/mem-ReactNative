@@ -25,6 +25,5 @@ export const SubTitle = styled.Text`
 `;
 
 export const FurnitureContainer = styled.View`
-  justify-content: space-between;
   width: 60%;
 `;
